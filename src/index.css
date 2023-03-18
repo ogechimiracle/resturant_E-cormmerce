@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card{
+    @apply relative w-72 cursor-pointer border-b-4 rounded-md bg-gradient-to-t from-white/40 h-44 text-center px-3 py-7 self-end duration-500 delay-100;
+}
+
+.card-active{
+    @apply h-96;
+}
+
+.logo{
+    @apply text-5xl mt-2 max-w-[5rem] mx-auto min-w-[5rem] min-h-[5rem] rounded-full grid place-items-center; 
+}
+
+.para{
+    @apply mt-3 text-sm
+}
+
+.card .rate-level{
+    @apply border-2 border-green-200 text-white min-w-[3rem] min-h-[3rem] grid place-items-center rounded-full max-w-[3rem] absolute -right-2.5 scale-0;
+}
+
+.card-active .rate-level{
+    @apply scale-[1.3] delay-700 duration-300;
+}
+
+.active{
+    @apply w-4/5;
+}
+
+
+
